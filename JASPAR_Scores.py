@@ -19,7 +19,7 @@ threshold = 8.0
 
 ####################################################################################################################
 # Read in sequence data.
-pkl_file = open('/home/kong/Documents/Personal_Add/Apple/Swiss/Hall_Heim/Project/Data/data.pkl', 'rb')
+pkl_file = open('/home/kong/Documents/Data/data.pkl', 'rb')
 data = pickle.load(pkl_file)
 pkl_file.close()
 
@@ -59,10 +59,10 @@ apple = np.transpose(apple)
 ####################################################################################################################
 # Save header as a file.
 header = np.transpose(np.array([pfm_ids, names]))
-np.savetxt('/home/kong/Documents/Personal_Add/Apple/Swiss/Hall_Heim/Project/Lock/JASPAR/JASPAR_Header.txt', header, fmt='%s', delimiter='\t')
+np.savetxt('/home/kong/Documents/Lock/JASPAR/JASPAR_Header.txt', header, fmt='%s', delimiter='\t')
 
 # Save the scores along with protein names and motif IDs.
-np.savetxt('/home/kong/Documents/Personal_Add/Apple/Swiss/Hall_Heim/Project/Lock/JASPAR/JASPAR_Scores.txt', apple, fmt='%f', delimiter='\t')
+np.savetxt('/home/kong/Documents/Lock/JASPAR/JASPAR_Scores.txt', apple, fmt='%f', delimiter='\t')
 
 ####################################################################################################################
 ####################################################################################################################
