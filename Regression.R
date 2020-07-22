@@ -5,7 +5,7 @@
 # Last Modified: 14 July 2020
 ####################################################################################################################
 ####################################################################################################################
-setwd('/home/kong/Documents/Personal_Add/Apple/Swiss/Hall_Heim/Project')
+setwd('/home/kong/Documents/')
 options(stringsAsFactors=FALSE)
 rm(list=ls())
 
@@ -14,7 +14,7 @@ library(pROC)
 
 ####################################################################################################################
 # Set paramenters.
-# dir.name = '/home/kong/Documents/Personal_Add/Apple/Swiss/Hall_Heim/Project/'
+# dir.name = '/home/kong/Documents/'
 thresh = 8
 
 ####################################################################################################################
